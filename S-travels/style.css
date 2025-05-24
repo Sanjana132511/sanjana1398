@@ -1,0 +1,270 @@
+     *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: sans-serif;
+        }
+        body{
+            width:100%;
+            min-height:100vh;
+
+        }
+       
+
+
+        header{
+            width: 100%;
+            height: 100vh;
+            background: url("https://images.pexels.com/photos/33545/sunrise-phu-quoc-island-ocean.jpg?auto=compress&cs=tinysrgb&w=500");
+            background-position:center ;
+            background-size: cover;
+            background-repeat: no-repeat;
+            position: relative;
+            padding-top:20px ;
+            animation: headerchange 20s linear infinite;
+
+        }
+        @keyframes headerchange{
+            0%{
+                background-image: url("https://images.pexels.com/photos/33545/sunrise-phu-quoc-island-ocean.jpg?auto=compress&cs=tinysrgb&w=500");
+            }
+                20%{
+                background-image: url("https://images.pexels.com/photos/33545/sunrise-phu-quoc-island-ocean.jpg?auto=compress&cs=tinysrgb&w=500");
+            }
+            25%{
+                background-image: url("https://images.pexels.com/photos/635279/pexels-photo-635279.jpeg?auto=compress&cs=tinysrgb&w=500");
+            }
+            45%{
+                background-image: url("https://images.pexels.com/photos/635279/pexels-photo-635279.jpeg?auto=compress&cs=tinysrgb&w=500");
+            }
+            50%{
+                background-image: url("https://images.pexels.com/photos/262325/pexels-photo-262325.jpeg?auto=compress&cs=tinysrgb&w=500")
+            }
+            70%{
+                background-image: url("https://images.pexels.com/photos/62627/niagara-cases-water-waterfall-62627.jpeg?auto=compress&cs=tinysrgb&w=500");
+            }
+            75%{
+                background-image: url("https://images.pexels.com/photos/443446/pexels-photo-443446.jpeg?auto=compress&cs=tinysrgb&w=500");
+            }
+            95%{
+                background-image: url("https://images.pexels.com/photos/414612/pexels-photo-414612.jpeg?auto=compress&cs=tinysrgb&w=500");
+            }
+        }
+        .container{
+            width: 90%;
+            height: 60px;
+            background:white ;
+            margin: 0 auto;
+            padding: 0 30px;
+            border-radius: 30px;
+            border: 1px solid rgba(243, 35, 170, 0.859) ;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .nav-list li{
+            display: inline;
+            margin-right: 25px;
+            font-size: 15px;
+            font-weight: 700;
+        }
+        .nav-list li:hover{
+            color: rgb(248, 3, 195);
+        }
+        .nav-list{
+            display: none;
+        }
+.menu-icon{
+    font-size: 24px;
+    font-weight: 700;
+}
+.logo{
+    font-size: 24px;
+}
+
+.hero-section .content_wrapper{
+    position: absolute;
+    width: 100%;
+    top: 25%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: antiquewhite;
+    padding: 0 20px;
+    margin: 0 auto;
+}
+.content_wrapper h1{
+    font-size: 24px;
+    font-weight: 700;
+    color: black;
+}
+.content_wrapper p{
+   
+
+    color: black;
+}
+form{
+    position: absolute;
+    bottom: 0;
+    background: linear-gradient(to right,rgb(13, 13, 247) ,rgb(195, 52, 166));
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    align-items: center;
+    justify-content: left;
+    padding: 30px;
+}
+.seach-items{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.seach-items div{
+    color: antiquewhite;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 13px;
+    margin-bottom:10px ;
+}
+.seach-items input{
+    height: 30px;
+    width: 100%;
+    padding: 0 20px;
+    border: 0;
+    outline: 0;
+    color: rgb(14, 12, 12);
+}
+.search_btn{
+    height: 50px;
+    padding: 0 46px;
+    border-radius: 30px;
+    border: 0;
+    outline: 0;
+    background-color: #31124b;
+    color: antiquewhite;
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin-top: 30px;
+    cursor: pointer;
+}
+.services{
+    padding: 100px 0;
+    background-color:rgb(142, 142, 221) ;
+}
+.services h5{
+    text-align: center;
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.services h1{
+    text-align: center;
+    font-size: 45px;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+.services .row{
+    width: 80%;
+ 
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(300px, 1fr ));
+    gap: 20px;
+}
+.services .row .col{
+    background: linear-gradient(to top, rgb(107, 97, 222), rgb(231, 91, 187));
+    padding: 40px;
+    text-align: center;
+    margin: 30px 10px;
+
+}
+.services .row .col h2{
+   font-size: 24px;
+   margin: 20px;
+   font-weight: 700;
+}
+.destination{
+    background:rgb(243, 217, 224);
+   
+    
+}
+
+.destination-card{
+    background-color: antiquewhite;
+    margin: 30px 10px;
+    padding-bottom:30px ;
+    border: 1px solid grey;
+    box-shadow: 3px 3px 3px grey;
+    border-radius: 0 0 10px 10px;
+   
+}
+
+
+.destination-card img{
+    width: 100%;
+    height: 300px;
+
+}
+
+.destination-card h2{
+  margin: 20px 10px 0;
+
+}
+.destination-card p{
+  margin: 10px 10px 20px;
+
+}
+.destination-card a{
+  margin: 10px 10px 20px;
+  text-decoration: none;
+  background-color: black;
+  color: antiquewhite;
+  padding: 6px 20px;
+  font-weight: 600;
+
+}
+footer{
+    width: 100%;
+    padding: 15px 0;
+    background: rgb(7, 17, 206);
+}
+footer p{
+    text-align: center;
+    color: antiquewhite;
+
+}
+@media only screen and (min-width:768px){
+    .nav-list{
+        display: block;
+    }
+    .menu-icon{
+        display: none;
+    }
+    .hero-section .content_wrapper{
+        top: 30%;
+
+  
+}
+.content_wrapper h1{
+    font-size: 55px;
+    color: black;
+
+}
+.content_wrapper p{
+    font-size: 25px;
+    color: black;
+    margin: 10px 0;
+
+}
+form{
+    justify-content: center;
+}
+form .seach-items input{
+    height: 40px;
+}
+}
+    
